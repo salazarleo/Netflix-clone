@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url(imagens/background-home.png);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+
+}
+
+.cabecalho-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 40px;
+    padding-left: 346px;
+}
+
+.logotipo {
+    width: 160px;
+}
+
+
+
+
+.modal {
+    width: 450px;
+    height: 730px;
+    background-color: rgba(0, 0, 0, 0.678);
+    position: absolute;
+    top: 90px;
+    right: 750px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 130px;
+    color: white;
+    border-radius: 10px;
+}
+
+.entrar-modal {
+    padding-bottom: 30px;
+    padding-right: 200px;
+}
+
+.mid-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+.modal-email {
+    width: 300px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: rgba(36, 36, 36, 0.452);
+    border: 0.1pt solid rgb(255, 255, 255);
+    color: rgb(177, 177, 177);
+}
+
+.modal-entrar {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 460;
+    background-color: rgba(229, 9, 20, 1);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.modal-entrar:hover {
+    background-color: rgb(161, 23, 30);
+    transition: 0.3s;
+}
+
+.btns-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+.ou-modal {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(177, 177, 177);
+}
+
+.cdg-modal {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    background-color: rgba(146, 146, 146, 0.582);
+    cursor: pointer;
+}
+
+.cdg-modal:hover {
+    background-color: rgba(99, 99, 99, 0.582);
+    transition: 0.3s;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.esqueceu-modal {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: 5px;
+}
+
+.esqueceu-modal:hover {
+    text-decoration: underline;
+
+}
+
+.footer-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    padding-top: 20px;
+    color: rgb(218, 218, 218);
+}
+
+.modal-novoeassine {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.novo-modal {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+.assine-modal {
+    font-weight: 550;
+    padding-left: 5px;
+}
+
+.assine-modal:hover {
+    text-decoration: underline;
+}
+
+.desc-modal {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+input {
+    padding-left: 12px;
+}
+
+.lembrese-modal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.marc-modal {
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+
+
+}
