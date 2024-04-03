@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url(imagens/background-home.png);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+
+}
+
+.cabecalho-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    gap: 200px;
+}
+
+.logotipo {
+    width: 160px;
+}
+
+.opts-linguas {
+    width: 150px;
+    height: 35px;
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color: rgba(61, 61, 61, 0.5);
+    border: none;
+    color: white;
+    border: 0.1pt solid rgb(97, 97, 97);
+    font-size: 14px;
+    font-weight: 650;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-entrar {
+    width: 80px;
+    height: 35px;
+    background-color: rgba(229, 9, 20, 1);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.btn-entrar:hover {
+    background-color: rgb(161, 23, 30);
+    transition: 0.3s;
+}
+
+
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 220px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+}
+
+.txt-email {
+    width: 450px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color: rgba(161, 161, 161, 0.37);
+    border: 0.1pt solid rgb(255, 255, 255);
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btn-vamos {
+    width: 150px;
+    height: 50px;
+    background-color: rgba(229, 9, 20, 1);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.btn-vamos:hover {
+    background-color: rgb(161, 23, 30);
+    transition: 0.3s;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
