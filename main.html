@@ -21,10 +21,125 @@
             <a class="cabec" href="#">Navegar por idiomas</a>
         </nav>
         <div class="icons">
-            <a class="btns-cant" href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a>
-            <a class="btns-cant" href="#"> <i class="fa-regular fa-bell"></i> </a>
-            <a class="btns-cant" href="#"> <i class="fa-regular fa-user"></i> </a>
+
+            <button class="botao-pesquisa" onclick="togglePesquisa()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <div class="menu-pequisa-wrap" id="subPesquisa">
+                <div class="menu-pesquisa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="input-pesquisa" type="text" name="" placeholder=" Título e genero" id="">
+                    <button class="btnclose-pesquisa" onclick="ClosePesquisa()">x</button>
+                </div>
+            </div>
+
+            <button class="botao-notificacao" onclick="toggleNotificacao()">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+
+            <div class="notificação-wrap" id="subNotificacao">
+                <div class="notificações">
+                    <button class="card-notificacao">
+                        <img class="img-notificacao" src="imagens/dexter.jpg" alt="" width="140px" height="90px">
+                        <div class="text-notificacao">
+                            <h1 class="titulo-notificacao">Novidade <br> Dexter</h1>
+                            <h2 class="subtitulo-notificacao"> há 1 dia</h2>
+                        </div>
+                    </button>
+
+                    <button class="card-notificacao">
+                        <img class="img-notificacao" src="imagens/donzela.png" alt="" width="140px" height="90px">
+                        <div class="text-notificacao">
+                            <h1 class="titulo-notificacao">Novidade <br> Donzela</h1>
+                            <h2 class="subtitulo-notificacao"> há 2 dias</h2>
+                        </div>
+                    </button>
+
+                    <button class="card-notificacao">
+                        <img class="img-notificacao" src="imagens/anonimo.jpg" alt="" width="140px" height="90px">
+                        <div class="text-notificacao">
+                            <h1 class="titulo-notificacao">Novidade <br> Anonimo</h1>
+                            <h2 class="subtitulo-notificacao"> há 3 dias</h2>
+                        </div>
+                    </button>
+
+                    <button class="card-notificacao">
+                        <img class="img-notificacao" src="imagens/swtis.jpg" alt="" width="140px" height="90px">
+                        <div class="text-notificacao">
+                            <h1 class="titulo-notificacao">Novidade <br>Suits</h1>
+                            <h2 class="subtitulo-notificacao"> há 7 dias</h2>
+                        </div>
+                    </button>
+
+                    <button class="card-notificacao">
+                        <img class="img-notificacao" src="imagens/voce.jpg" alt="" width="140px" height="90px">
+                        <div class="text-notificacao">
+                            <h1 class="titulo-notificacao">Novidade <br>Você</h1>
+                            <h2 class="subtitulo-notificacao"> há 7 dias</h2>
+                        </div>
+                    </button>
+
+                    <button class="card-notificacao">
+                        <img class="img-notificacao" src="imagens/the100.jpg" alt="" width="140px" height="90px">
+                        <div class="text-notificacao">
+                            <h1 class="titulo-notificacao">Novidade <br>The 100</h1>
+                            <h2 class="subtitulo-notificacao"> há 7 dias</h2>
+                        </div>
+                    </button>
+
+                    <button class="card-notificacao">
+                        <img class="img-notificacao" src="imagens/lucifer.jpg" alt="" width="140px" height="90px">
+                        <div class="text-notificacao">
+                            <h1 class="titulo-notificacao">Novidade <br>Lucifer</h1>
+                            <h2 class="subtitulo-notificacao"> há 7 dias</h2>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+
+            <button class="botao-perfil" onclick="toggleMenu()">
+                <img class="img-perfil" src="/imagens/logo1.png" width="28" height="28">
+                <p class="setaperfil" id="setaPerfil">▾</p>
+            </button>
         </div>
+
+
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="perfis">
+                    <button class="btncard">
+                        <div class="cardperfil">
+                            <img class="img-sub" src="/imagens/logo1.png" alt="logo1" width="40" height="40">
+                            <h2 class="nm-perfilsub">Arthur</h2>
+                        </div>
+                    </button>
+                    <button class="btncard">
+                        <div class="cardperfil">
+                            <img class="img-sub" src="/imagens/logo2.png" alt="logo2" width="40" height="40">
+                            <h2 class="nm-perfilsub">Leonardo</h2>
+                        </div>
+                    </button>
+
+                    <div class="cardperfil">
+                        <button class="btncard"> <img class="img-sub" src="/imagens/logo3.png" alt="logo3" width="40"
+                                height="40">
+                            <h2 class="nm-perfilsub">Bruna</h2>
+                        </button>
+                    </div>
+                </div>
+                <div class="btns-menu">
+                    <button class="btnsubmenu"><i class="fa-solid fa-pencil"></i> Gerenciar Perfis</button>
+                    <button class="btnsubmenu"><i class="fa-solid fa-right-left"></i> Transferir perfil</button>
+                    <button class="btnsubmenu"><i class="fa-solid fa-user"></i> Conta</button>
+                    <button class="btnsubmenu"><i class="fa-regular fa-circle-question"></i> Central de ajuda</button>
+                    <button class="btnsubmenusair"><i class="fa-solid fa-right-from-bracket"></i> Sair da
+                        Netflix</button>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <main>
@@ -34,7 +149,8 @@
             <h1 class="titulo">Top 6 em séries hoje</h1>
         </section>
         <div class="subtitulo">
-            <h2>Esta série acompanha a vida do viking Ragnar Lothbrok<br> em sua jornada para ampliar o
+            <h2 class="text-subtilo">Esta série acompanha a vida do viking Ragnar Lothbrok<br> em sua jornada para
+                ampliar o
                 domínio nórdico e <br> desafiar
                 um líder incompetente e sem visão.
 
@@ -45,31 +161,158 @@
             <button class="mais-inf"><i class="fa-solid fa-circle-info"></i> Mais informações</button>
         </div>
 
+        <div class="moddle-inf hidden">
+
+            <div class="header-moddle">
+
+                <button class="closebtn-maisinf"><i class="fa-solid fa-xmark"></i></button>
+
+                <img class="logo-maisinf" src="imagens/logovikings.png" alt="" width="350px" height="150px">
+
+                <div class="btns-maisinf">
+                    <button class="assistir2"> <i class="fa-solid fa-play"></i> Assistir</button>
+                    <button class="btn-rendond-maisinf"><i class="fa-solid fa-plus"></i></button>
+                    <button class="btn-rendond-maisinf"><i class="fa-regular fa-heart"></i></button>
+                </div>
+
+            </div>
+
+            <div class="mid-mais-inf">
+
+                <div class="firstheader">
+
+                    <div class="first-details-maisinf">
+                        <h2 class="title-green">90% relevante</h2>
+                        <h2 class="subtitle">2019</h2>
+                        <h2 class="subtitle">6 temporadas</h2>
+                    </div>
+
+                    <div class="detalhes-maisinf">
+                        <button class="btn-red">16</button>
+                        <h3 class="desc-serie">violência extrema, conteúdo sexual, drogas</h3>
+                    </div>
+
+                    <div class="resum-maisinf">
+                        <p class="text-resumo">Acompanha a vida do viking Ragnar Lothbrok em sua jornada para
+                            ampliar o
+                            domínio nórdico e
+                            desafiar um líder incompetente e sem visão.</p>
+                    </div>
+
+                </div>
+
+                <div class="secondheader">
+                    <div>
+                        <h1 class="title-secondinf">Elenco</h1>
+                        <p class="titles-secondmaisinf">Travis Fimmel, Katheryn Winnick, Clive Standen, mais</p>
+                    </div>
+
+                    <div>
+                        <h1 class="title-secondinf">Generos</h1>
+                        <p class="titles-secondmaisinf">Programas sobre política, Séries dramaticas</p>
+                    </div>
+
+                    <div>
+                        <h1 class="title-secondinf">Cenas e momentos</h1>
+                        <p class="titles-secondmaisinf">Violentos, empolgantes</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-maisinf">
+                <div class="header-footer">
+                    <h1 class="tittle-footermi">Episódios</h1>
+                    <button class="btn-mi">Temporada 1 ▾</button>
+                </div>
+                <div class="header2maisinf">
+                    <button class="ep1">
+                        <h1 class="nmep">1</h1>
+                        <img class="img-ep1" src="imagens/ragnar.jpg" alt="" width="200px" height="100px">
+                        <div class="desc-ep1">
+                            <h1 class="tittl-eep1">Ritos de passagem</h1>
+                            <p class="sinopse-ep2">Ragnar Lothbrok está determinado a navegar rumo ao oeste para
+                                descobrir
+                                novas terrar e
+                                riquezas
+                                apesar das advertencias incisivas de Earl Haraldson.</p>
+                        </div>
+                    </button>
+
+                    <button class="ep1">
+                        <h1 class="nmep">2</h1>
+                        <img class="img-ep1" src="imagens/ep2.jpg" alt="" width="200px" height="100px">
+                        <div class="desc-ep1">
+                            <h1 class="tittl-eep1">A fúria dos homens do Norte</h1>
+                            <p class="sinopse-ep1">Ragnar e seus homens se preparam para sua primeira jornada ao oeste,
+                                mas o
+                                furioso Earl Haraldson jura se vingar pela rebeldia deles.
+                            </p>
+                        </div>
+                    </button>
+
+                    <button class="ep1">
+                        <h1 class="nmep">3</h1>
+                        <img class="img-ep1" src="imagens/ep3.jpg" alt="" width="200px" height="100px">
+                        <div class="desc-ep1">
+                            <h1 class="tittl-eep1">Despossuído</h1>
+                            <p class="sinopse-ep1">Após o término da primeira incursão dos vikings na Inglaterra, Ragnar
+                                escolhe
+                                uma recompensa inusitada, e Heraldson trama um plano para obter vantagem.
+                            </p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
     </main>
 
     <footer>
         <h1 class="tit-series">Séries</h1>
-        <div class="imgs-series">
-            <ul>
+        <div class="card-todos">
 
-                <li><a href="#"></a><img class="img-series" src="imagens/serie1.jpg" alt="serie1" width="330"
-                        height="180"></a></li>
-                <li><a href="#"></a><img class="img-series" src="imagens/serie2.jpg" alt="serie2" width="300"
-                        height="180"></a></li>
-                <li><a href="#"></a><img class="img-series" src="imagens/serie3.jpg" alt="serie3" width="300"
-                        height="180"></a></li>
-                <li><a href="#"></a><img class="img-series" src="imagens/serie4.jpg" alt="serie4" width="300"
-                        height="180"></a></li>
-                <li><a href="#"></a><img class="img-series" src="imagens/serie5.jpg" alt="serie5" width="300"
-                        height="180"></a></li>
-                <li><a href="#"></a><img class="img-series" src="imagens/serie6.jpg" alt="serie6" width="300"
-                        height="180"></a></li>
+            <div class="card">
+                <div class="img-box"> <a href="#"><img class="img-series" src="imagens/stranger things.jpg" alt="serie1"
+                            width="330" height="180"></a></div>
+            </div>
 
-            </ul>
+            <div class="card">
+                <div class="img-box"> <a href="#"><img class="img-series" src="imagens/topgun.jpg" alt="serie2"
+                            width="300" height="180"></a></div>
+            </div>
+
+            <div class="card">
+                <div class="img-box"> <a href="#"><img class="img-series" src="imagens/serie3.jpg" alt="serie3"
+                            width="300" height="180"></a></div>
+
+            </div>
+
+            <div class="card">
+                <div class="img-box"> <a href="#"><img class="img-series" src="imagens/serie4.jpg" alt="serie4"
+                            width="300" height="180"></a></div>
+            </div>
+
+            <div class="card">
+                <div class="img-box"> <a href="#"><img class="img-series" src="imagens/lutter.png" alt="serie5"
+                            width="300" height="180"></a></div>
+            </div>
+
+            <div class="card">
+                <div class="img-box"> <a href="#"><img class="img-series" src="imagens/serie6.jpg" alt="serie6"
+                            width="300" height="180"></a></div>
+            </div>
+
         </div>
     </footer>
-
+    <div class="overlay hidden"></div>
+    <script src="script-main.js"></script>
+    <script src="https://kit.fontawesome.com/71ea4dcabc.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/71ea4dcabc.js" crossorigin="anonymous"></script>
+
+
 
 </html>
