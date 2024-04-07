@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(imagens/Fundo\ Vikins.png);
+    background-image: url(imagens/fundo.png);
     background-repeat: no-repeat;
     background-size: 1910px;
     background-position: 0px 0px;
@@ -494,7 +494,7 @@ fa-circle-question {
     padding-top: 240px;
     padding-left: 40px;
     border-radius: 20px;
-    background-image: url(imagens/vikings\ moddle.png);
+    background-image: url(imagens/moddle.png);
     background-repeat: no-repeat;
     background-position: 0px -30px;
     background-size: 900px;
