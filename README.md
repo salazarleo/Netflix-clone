@@ -1,5 +1,5 @@
 ## Sobre o projeto
-Este projeto visa criar uma interface semelhante à da Netflix para uma experiência de usuário envolvente e intuitiva.
+Esse projeto visa criar uma interface semelhante à da Netflix para uma experiência de usuário envolvente e intuitiva.
 
 👉 Demonstração ao vivo: https://salazarleo.github.io/Netflix-clone/
 
